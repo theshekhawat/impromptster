@@ -17,7 +17,7 @@ Now, Player 2 will be presented some question which he/she will answer as Player
 
 ### Installation
 
-This project is implemented using Angular Cli version [9.1.7] and [Node.js](https://nodejs.org/) version 12.16.3.
+This project is implemented using Angular Cli version [11.0.4] and [Node.js](https://nodejs.org/) version 12.16.3.
 
 Install the dependencies and devDependencies and start the server.
 
