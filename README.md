@@ -1,27 +1,64 @@
 # Impromptster
+This is the repository for Impromptster (Impromptu + Imposter), a light hearted team building game in Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+There is a spinning wheel with the names of participants. Once the wheel stops spinning, the pointer points to a randomly selected
+name of a participant. Let's call that participant as Player 1. Now, to make the game interesting, the host of the game chooses the
+participant who's name is exactly opposite Player 1 in the wheel. Let's call the selected participant as Player 2.
 
-## Development server
+Now, Player 2 will be presented some question which he/she will answer as Player 1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Technologies
 
-## Code scaffolding
+* <a href="https://angular.io/" target="_blank">Angular</a>
+* <a href="https://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>
+* <a href="https://sass-lang.com/" target="_blank">Sass</a>
+* <a href="https://nodejs.org/" target="_blank">Nodejs</a>
+* <a href="https://jquery.com/" target="_blank">JQuery</a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
 
-## Build
+This project is implemented using Angular Cli version [9.1.7] and [Node.js](https://nodejs.org/) version 12.16.3.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Install the dependencies and devDependencies and start the server.
 
-## Running unit tests
+```sh
+$ cd impromptster
+$ npm install
+$ npm run start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For production environments...
 
-## Running end-to-end tests
+```sh
+$ npm install --production
+$ npm run start
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Todos
 
-## Further help
+ - Real time player interaction
+ - Page not found
+ - Read quiz questions from a config file
+ - Deployment on Git
+ - Buzzer if the answer matches or now
+ 
+### Screenshot
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Screenshot](screenshots/Screenshot-Wheel.PNG?raw=true "Wheel-of-fortune")
+![Screenshot](screenshots/Screenshot-Quiz.PNG?raw=true "quiz-questions")
+
+License
+----
+
+MIT
+
+
+**Free Software!**
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+   [git-repo-url]: <git@github.com:theshekhawat/impromptster.git>
+   [node.js]: <http://nodejs.org>
+   [Twitter Bootstrap]: <https://getbootstrap.com/>
+   [jQuery]: <https://jquery.com>
+   [Angular]: <https://angular.io/>
