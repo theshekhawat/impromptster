@@ -1,0 +1,63 @@
+<header>
+    <div class="menu-btn" #menuButton (click)="toggleMenu()">
+        <span #hamburger class="menu-btn__burger"></span>
+    </div>
+
+    <nav #navbar class="nav">
+        <ul #menuNav class="menu-nav">
+            <li class="menu-nav__item active" [ngClass]="{'open': this.showMenu == true}">
+                <a href="#!" class="menu-nav__link">
+                    Home
+                </a>
+            </li>
+            <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                <a [routerLink]="['/wheel-of-fortune']" class="menu-nav__link">
+                    Game Wheel
+                </a>
+            </li>
+            <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                <a [routerLink]="['/about']" class="menu-nav__link">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="home-icon">
+    <button class="btn btn-outline-warning btn-md btn-block text-white" routerLink="/startup"><i
+            class="fas fa-home fa-2x" aria-hidden="true"></i></button>
+</div>
+<main>
+    <section class="home">
+        <h1 class="home__name">
+            Bhawani <span class="home__name--last">Shekhawat</span>
+        </h1>
+        <h2>
+            Curious Coder, Software Artist & Mental(ist)&#8482;
+        </h2>
+
+        <div class="social-icons">
+            <a target="_blank" href="https://twitter.com/beingBSS">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a rel="publisher" target="_blank" href="https://www.facebook.com/bhawani.shekhawat/">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#!">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/shekhawatbhawani/">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a rel="publisher" target="_blank"
+                href="https://apps.apple.com/us/app/tapraisal-income-tax-cal-india/id1218344420#?platform=iphone">
+                <i class="fab fa-app-store-ios fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://patents.google.com/?inventor=Bhawani+Shekhawat">
+                <i class="fa fa-id-card fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <footer>&copy;Copyright 2021</footer>
+    </section>
+</main>

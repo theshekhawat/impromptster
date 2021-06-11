@@ -1,0 +1,74 @@
+<div>
+    <div style="float: left;">
+        <div class="menu-btn" #menuButton (click)="toggleMenu()">
+            <span #hamburger class="menu-btn__burger"></span>
+        </div>
+
+        <nav #navbar class="nav">
+            <ul #menuNav class="menu-nav">
+                <li class="menu-nav__item active" [ngClass]="{'open': this.showMenu == true}">
+                    <a href="#!" class="menu-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                    <a [routerLink]="['/wheel-of-fortune']" class="menu-nav__link">
+                        Game Wheel
+                    </a>
+                </li>
+                <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                    <a [routerLink]="['/about']" class="menu-nav__link">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="home-icon">
+            <button class="btn btn-outline-warning btn-sm btn-block text-white" routerLink="/startup"><i
+                    class="fas fa-home fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <br>
+        <div id="descriptionDiv" class="text-white mt-5 px-4 my-3">
+            <div class="align-center">
+                <h2>Participants</h2>
+                <div class="input-group mb-3" #inputDiv>
+                    <textarea class="form-control" id="txtareaParticipants" required rows="3" [(ngModel)]="participants"
+                        placeholder="Enter participants name seperated by comma" aria-label="Participants"
+                        aria-describedby="basic-addon1"></textarea>
+
+                    <button type="button" #submitButton [disabled]="this.clicked" class="btn btn-outline-warning"
+                        title="Add"><i class="fas fa-arrow-circle-right fa-2x"
+                            (click)="createDataForWheel();"></i></button>
+
+                    <button type="button" class="btn btn-outline-warning" (click)="resetTheGame()" title="Add"><i
+                            class="fas fa-redo fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="descriptionDiv" class="text-white mt-5 px-4">
+            <div class="align-center">
+                <h2>Info</h2>
+                <div class="input-group mb-3" #infoDiv>
+                    <textarea class="form-control" id="txtareaInfo" readonly=true rows="3"
+                        placeholder="Try and keep even number of participants so that every participant has a counterpart"
+                        aria-label="Participants" aria-describedby="basic-addon1"></textarea>
+                    <button type="button" class="btn btn-outline-warning" title="Add"><i
+                            class="fas fa-info-circle fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="descriptionDiv" class="text-white mt-5 px-4">
+            <div class="align-center">
+                <h2>Note</h2>
+                <div class="input-group mb-3" #noteDiv>
+                    <textarea class="form-control" id="txtareaInfo" readonly=true rows="4"
+                        placeholder="It's a light hearted game. Anyone suffering from 'Offencivitis' can refrain from joining."
+                        aria-label="Participants" aria-describedby="basic-addon1"></textarea>
+                    <button type="button" class="btn btn-outline-warning" title="Add"><i class="fa fa-sticky-note fa-2x"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

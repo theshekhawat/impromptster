@@ -1,0 +1,67 @@
+
+.container {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+  }
+  .container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+.moreinfo {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.icon-color {
+    color: darkgoldenrod;
+  }
+  
+  input, textarea, select {
+    border-left: 5px solid skyblue;
+    outline: none;
+    display: inline-flex;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #descriptionDiv {
+    border: 2px solid darkgoldenrod; 
+    border-radius: 20px;
+  }
+  
+  h2, h3, h4 {
+    color: goldenrod;
+    font-weight: bolder;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  /* .ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green 
+  } */
+  
+  input.ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid {
+    border-left: 5px solid #a94442;
+    
+  }
+  
+  input.ng-valid, textarea.ng-valid {
+    border-left: 5px solid #42A948;
+  }
+  
+  
+  /* .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red 
+  } */
