@@ -44,7 +44,10 @@ $ npm run start
  
 ### Screenshot
 
+##### Screenshot - Wheel of fortune!
 ![Screenshot](screenshots/Screenshot-Wheel.PNG?raw=true "Wheel-of-fortune")
+
+##### Screenshot - Quiz
 ![Screenshot](screenshots/Screenshot-Quiz.PNG?raw=true "quiz-questions")
 
 License
