@@ -20,7 +20,7 @@ export class StartupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     if (!this.showMenu) {
       this.hamburger.nativeElement.classList.add('open');
       this.navbar.nativeElement.classList.add('open');
