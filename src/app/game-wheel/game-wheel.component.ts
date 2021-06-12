@@ -452,7 +452,7 @@ class PlayGame extends Phaser.Scene {
   navigateToQuiz() {
     var canvas = document.querySelector('canvas');
     canvas?.remove();
-    GameWheelComponent.routerToBePassed.navigateByUrl('/quiz');
+    GameWheelComponent.routerToBePassed.navigateByUrl('/quiz', { skipLocationChange: true });
   }
 
   // function to spin the wheel
