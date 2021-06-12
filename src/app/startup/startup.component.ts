@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ConstantsService } from '../services/constants.service';
 
 @Component({
   selector: 'app-startup',
@@ -12,6 +13,7 @@ export class StartupComponent implements OnInit {
   @ViewChild('menuNav') menuNav!: ElementRef;
   @ViewChild('menuNavItem') menuNavItem!: ElementRef;
   public showMenu = false;
+  public imgBasePath = ConstantsService.imageAssetsBasePath;
 
   constructor() { }
 

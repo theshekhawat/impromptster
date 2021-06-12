@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as Phaser from 'phaser';
 import { Router } from '@angular/router';
+import { ConstantsService } from '../services/constants.service';
 
 @Component({
   selector: 'app-game-wheel',
@@ -330,7 +331,7 @@ class PlayGame extends Phaser.Scene {
 
   // method to be executed when the scene preloads
   preload(): void {
-    this.load.image('pin', '../../assets/images/new-pin.png'),
+    this.load.image('pin', ConstantsService.imageAssetsBasePath +  'new-pin.png'),
     {
       frameWidth: 50,
       frameHeight: 50

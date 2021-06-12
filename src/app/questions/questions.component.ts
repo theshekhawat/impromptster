@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { IQuestionDetails } from '../model/IQuestionDetails';
 import { ActivatedRoute } from '@angular/router';
 import { QuizInformationDetailsService } from '../services/quiz-information-details.service';
+import { ConstantsService } from '../services/constants.service';
 
 @Component({
   selector: 'app-questions',
@@ -18,6 +19,7 @@ export class QuestionsComponent implements OnInit {
   @ViewChild('menuNavItem') menuNavItem!: ElementRef;
   public showMenu = false;
   public questionDetails!: Array<IQuestionDetails>;
+  public imgBasePath = ConstantsService.imageAssetsBasePath;
 
   constructor(private quizInformationDetailsService: QuizInformationDetailsService, private route: ActivatedRoute) { }
 
