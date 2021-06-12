@@ -1,0 +1,38 @@
+
+<header>
+    <div class="menu-btn" #menuButton (click)="toggleMenu()">
+        <span #hamburger class="menu-btn__burger"></span>
+    </div>
+
+    <nav #navbar class="nav">
+        <ul #menuNav class="menu-nav">
+            <li class="menu-nav__item active" [ngClass]="{'open': this.showMenu == true}">
+                <a href="#!" class="menu-nav__link">
+                    Home
+                </a>
+            </li>
+            <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                <a [routerLink]="['/wheel-of-fortune']" class="menu-nav__link">
+                    Game Wheel
+                </a>
+            </li>
+            <li class="menu-nav__item" [ngClass]="{'open': this.showMenu == true}">
+                <a [routerLink]="['/about']" class="menu-nav__link">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="home-icon">
+    <button class="btn btn-outline-warning btn-sm btn-block text-white" routerLink="/startup"><i
+            class="fas fa-home fa-2x" aria-hidden="true"></i></button>
+</div>
+
+<div class="text-white">
+    <div class="middle">
+      <h1>You seem lost pal!</h1>
+      <hr>
+      <p>The page you are looking for is not found!</p>
+    </div>
+</div>
