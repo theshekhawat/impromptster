@@ -38,7 +38,6 @@ $ npm run start
 
  - Real time player interaction
  - Page not found
- - Read quiz questions from a config file
  - Buzzer if the answer matches or now
  
 ### Screenshot
