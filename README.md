@@ -37,8 +37,6 @@ $ npm run start
 ### Todos
 
  - Real time player interaction
- - Page not found
- - Buzzer if the answer matches or now
  
 ### Screenshot
 
