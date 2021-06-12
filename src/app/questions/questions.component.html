@@ -37,11 +37,10 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/thinking-face.png"
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/thinking-face.png"
                                             alt="card image"></p>
-                                    <h4 class="card-title">What if ?</h4>
-                                    <p class="card-text">This may or may not be harmful to your health. The creators do
-                                        not take any responsibility of what's going to happen to you!</p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][0].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][0].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -50,8 +49,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Here you go!</h4>
-                                    <p class="card-text">If given the opportunity to be the boss for a day, what and all
-                                        you'd like to do ?.</p>
+                                    <p class="card-text">{{this.questionDetails["Questions"][0].question}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="">
@@ -88,9 +86,9 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/alien.png" alt="card image"></p>
-                                    <h4 class="card-title">Wicked</h4>
-                                    <p class="card-text">You're so damned. Can't stop laughing! 🤣</p>
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/alien.png" alt="card image"></p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][1].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][1].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -99,8 +97,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">You're on your own!</h4>
-                                    <p class="card-text">If Aliens were to land on earth, which one of your team-mates
-                                        you secretly wish that aliens should take with them and never return. 😈</p>
+                                    <p class="card-text">{{this.questionDetails["Questions"][1].question}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="">
@@ -137,10 +134,10 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/smirking-face-.png"
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/smirking-face-.png"
                                             alt="card image"></p>
-                                    <h4 class="card-title">Personality</h4>
-                                    <p class="card-text">Let's see how well you know your team mates</p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][2].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][2].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -149,8 +146,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Here you go!</h4>
-                                    <p class="card-text">what is your favorite sarcasm or rather favourite polite insult
-                                        that you are master of ?.</p>
+                                    <p class="card-text">{{this.questionDetails["Questions"][2].question}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="">
@@ -187,10 +183,9 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/actor.png" alt="card image"></p>
-                                    <h4 class="card-title">Fun!</h4>
-                                    <p class="card-text">Feel your guts, think hard, you know it in your heart. For
-                                        god's sake don't say that. Keep that in your heart.</p>
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/actor.png" alt="card image"></p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][3].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][3].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -199,8 +194,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Here you go!</h4>
-                                    <p class="card-text">If you were to realistically describe yourself as a movie
-                                        character, which character you think would suit you the most ?</p>
+                                    <p class="card-text">{{this.questionDetails["Questions"][3].question}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="">
@@ -237,12 +231,10 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/social-media.png"
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/social-media.png"
                                             alt="card image"></p>
-                                    <h4 class="card-title">Social Media!</h4>
-                                    <p class="card-text">This is purely hypothetical and bear no inclination or
-                                        motivation to anyone or anything, especially the creators. So, feel free to get
-                                        in trouble 😉</p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][4].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][4].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -251,7 +243,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Here you go!</h4>
-                                    <p class="card-text">what would be the best way to describe your Tinder profile ?.
+                                    <p class="card-text">{{this.questionDetails["Questions"][4].question}}
                                     </p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
@@ -289,10 +281,9 @@
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../assets/images/joy.png" alt="card image"></p>
-                                    <h4 class="card-title">Finally!</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Similique, impedit!</p>
+                                    <p><img class=" img-fluid" src="/impromptster/assets/images/joy.png" alt="card image"></p>
+                                    <h4 class="card-title">{{this.questionDetails["Questions"][5].category}}</h4>
+                                    <p class="card-text">{{this.questionDetails["Questions"][5].disclaimer}}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
@@ -301,9 +292,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Here you go!</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                        tempore cumque dignissimos eligendi soluta rerum accusantium, illum fugiat ea
-                                        sequi doloribus non iste quas odio quisquam molestias, autem nulla fuga.</p>
+                                    <p class="card-text">{{this.questionDetails["Questions"][5].question}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="">

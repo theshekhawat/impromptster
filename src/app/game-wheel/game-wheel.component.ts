@@ -320,10 +320,10 @@ class playGame extends Phaser.Scene {
   }
 
   // method to be executed when the scene preloads
-  preload() {
+  preload(): void {
 
     // loading pin image
-    this.load.image("pin", "../assets/images/new-pin.png"), {
+    this.load.image("pin", "/impormptster/assets/images/new-pin.png"), {
       frameWidth: 50,
       frameHeight: 50
     };
@@ -428,7 +428,7 @@ class playGame extends Phaser.Scene {
       font: "bold 32px Arial",
       align: "center",
       color: "blue",
-      
+
     }).setInteractive()
       .on('pointerdown', () => this.navigateToQuiz());;
 

@@ -1,6 +1,9 @@
 import { ElementRef } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { IQuestionDetails } from '../model/IQuestionDetails';
+import { ActivatedRoute } from '@angular/router';
+import { QuizInformationDetailsService } from '../services/quiz-information-details.service';
 
 @Component({
   selector: 'app-questions',
@@ -14,13 +17,26 @@ export class QuestionsComponent implements OnInit {
   @ViewChild('menuNav') menuNav!: ElementRef;
   @ViewChild('menuNavItem') menuNavItem!: ElementRef;
   public showMenu = false;
+  public questionDetails!: Array<IQuestionDetails>;
 
-  constructor() { }
+  constructor(private quizInformationDetailsService: QuizInformationDetailsService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.data.subscribe((data) => {
+      this.questionDetails = data.questionData;
+      console.log(data.questionData);
+    });
+    // this.getQuizQuestions();
   }
 
-  toggleMenu() {
+  private getQuizQuestions(): void {
+    this.quizInformationDetailsService.getsQuestionsList().subscribe(
+      (data) => this.questionDetails = data,
+      (error) => (console.log(error))
+    );
+  }
+
+  toggleMenu(): void {
     if (!this.showMenu) {
       this.hamburger.nativeElement.classList.add('open');
       this.navbar.nativeElement.classList.add('open');
