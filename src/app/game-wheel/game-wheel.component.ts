@@ -330,7 +330,7 @@ class PlayGame extends Phaser.Scene {
 
   // method to be executed when the scene preloads
   preload(): void {
-    this.load.image('pin', '/impormptster/assets/images/new-pin.png'),
+    this.load.image('pin', '../../assets/images/new-pin.png'),
     {
       frameWidth: 50,
       frameHeight: 50
