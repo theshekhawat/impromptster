@@ -8,11 +8,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./game-wheel.component.scss']
 })
 export class GameWheelComponent implements OnInit {
-  game!: Phaser.Game;
-  public participants: string = '';
-  public clicked = false;
-  public static sliceArray: { degrees: number; startColor: any; endColor: any; rings: number; sliceText: string; sliceTextStyle: { fontFamily: string; fontSize: string; color: string; }; sliceTextStroke: number; sliceTextStrokeColor: string; }[] = [];
+  public static sliceArray: {
+    degrees: number; startColor: any; endColor: any; rings: number;
+    sliceText: string;
+    sliceTextStyle:
+    {
+      fontFamily: string; fontSize: string; color: string;
+    };
+    sliceTextStroke: number;
+    sliceTextStrokeColor: string;
+  }[] = [];
   public static routerToBePassed: Router;
+  game!: Phaser.Game;
+  public participants = '';
+  public clicked = false;
 
   @ViewChild('menuButton') menuButton!: ElementRef;
   @ViewChild('hamburger') hamburger!: ElementRef;
@@ -34,38 +43,38 @@ export class GameWheelComponent implements OnInit {
 
   }
 
-  pickRandomColor() {
+  pickRandomColor(): number {
     const colors = [0xff0000, 0xff8800, 0x00ff00, 0x004400, 0xff00ff, 0x0000ff, 0x000000, 0xffffff, 0x00bfff, 0xffff00, 0x33FFC9];
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
   }
 
-  createDataForWheel() {
+  createDataForWheel(): void {
     this.clicked = true;
-    var participantNameArray = this.participants.split(",");
-    var sliceAngleDegree = 360 / participantNameArray.length;
+    const participantNameArray = this.participants.split(',');
+    const sliceAngleDegree = 360 / participantNameArray.length;
 
     participantNameArray.forEach(participant => {
-      var instanceToAdd = {
+      const instanceToAdd = {
         degrees: sliceAngleDegree,
         startColor: this.pickRandomColor(),
         endColor: this.pickRandomColor(),
         rings: 10,
         sliceText: participant.trim(),
         sliceTextStyle: {
-          fontFamily: "Arial Black",
+          fontFamily: 'Arial Black',
           fontSize: '22px',
-          color: "#000077"
+          color: '#000077'
         },
         sliceTextStroke: 8,
-        sliceTextStrokeColor: "#ffffff"
-      }
+        sliceTextStrokeColor: '#ffffff'
+      };
       GameWheelComponent.sliceArray.push(instanceToAdd);
     });
     console.log(GameWheelComponent.sliceArray);
 
     // game configuration object
-    var gameConfig = {
+    const gameConfig = {
 
       // render type
       type: Phaser.CANVAS,
@@ -80,24 +89,24 @@ export class GameWheelComponent implements OnInit {
       backgroundColor: 0xFFB133,
 
       // scenes used by the game
-      scene: [playGame]
+      scene: [PlayGame]
     };
 
     // game constructor
     this.game = new Phaser.Game(gameConfig);
 
     // pure javascript to give focus to the page/frame and scale the game
-    window.focus()
+    window.focus();
     this.resize();
-    window.addEventListener("resize", this.resize, false);
+    window.addEventListener('resize', this.resize, false);
   }
 
-  resetTheGame() {
+  resetTheGame(): void {
     window.location.reload();
   }
 
-  toggleMenu() {
-    var canvas = document.querySelector("canvas");
+  toggleMenu(): void {
+    const canvas = document.querySelector('canvas');
     if (!this.showMenu) {
       this.hamburger.nativeElement.classList.add('open');
       this.navbar.nativeElement.classList.add('open');
@@ -106,7 +115,7 @@ export class GameWheelComponent implements OnInit {
       this.infoDiv.nativeElement.style.visibility = 'hidden';
       this.noteDiv.nativeElement.style.visibility = 'hidden';
       if (canvas) {
-        canvas!.style.transition = 'transition: all 0.5s ease-in-out;';
+        canvas.style.transition = 'transition: all 0.5s ease-in-out;';
       }
 
       this.showMenu = true;
@@ -118,28 +127,28 @@ export class GameWheelComponent implements OnInit {
       this.infoDiv.nativeElement.style.visibility = 'visible';
       this.noteDiv.nativeElement.style.visibility = 'visible';
       if (canvas) {
-        canvas!.style.transition = 'transition: all 0.5s ease-in-out;';
+        canvas.style.transition = 'transition: all 0.5s ease-in-out;';
       }
       this.showMenu = false;
     }
   }
 
-  resize() {
-    var canvas = document.querySelector("canvas");
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    var windowRatio = windowWidth / windowHeight;
-    let gameRatio = Number(this.game.config.width) / Number(this.game.config.height);
+  resize(): void {
+    const canvas = document.querySelector('canvas');
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const windowRatio = windowWidth / windowHeight;
+    const gameRatio = Number(this.game.config.width) / Number(this.game.config.height);
     if (windowRatio < gameRatio) {
-      canvas!.style.width = windowWidth + "px";
-      canvas!.style.height = (windowWidth / gameRatio) + "px";
+      canvas!.style.width = windowWidth + 'px';
+      canvas!.style.height = (windowWidth / gameRatio) + 'px';
       canvas!.style.borderRadius = '10vh';
       canvas!.style.border = '2px double gold';
       canvas!.style.marginLeft = '10%';
     }
     else {
-      canvas!.style.width = (windowHeight * gameRatio) + "px";
-      canvas!.style.height = windowHeight + "px";
+      canvas!.style.width = (windowHeight * gameRatio) + 'px';
+      canvas!.style.height = windowHeight + 'px';
       canvas!.style.borderRadius = '10vh';
       canvas!.style.border = '2px double gold';
       canvas!.style.marginLeft = '10%';
@@ -147,7 +156,7 @@ export class GameWheelComponent implements OnInit {
   }
 }
 
-class playGame extends Phaser.Scene {
+class PlayGame extends Phaser.Scene {
   wheelContainer!: Phaser.GameObjects.Container;
   pin!: Phaser.GameObjects.Sprite;
   prizeText!: Phaser.GameObjects.Text;
@@ -163,126 +172,126 @@ class playGame extends Phaser.Scene {
     //     startColor: 0xff0000,
     //     endColor: 0xff8800,
     //     rings: 10,
-    //     sliceText: "",
+    //     sliceText: '',
     //     sliceTextStyle: {
-    //       fontFamily: "Arial Black",
+    //       fontFamily: 'Arial Black',
     //       fontSize: '22px',
-    //       color: "#000077"
+    //       color: '#000077'
     //     },
     //     sliceTextStroke: 8,
-    //     sliceTextStrokeColor: "#ffffff"
+    //     sliceTextStrokeColor: '#ffffff'
     //   },],
     // {
     //   degrees: 45,
     //   startColor: 0xff0000,
     //   endColor: 0xff8800,
     //   rings: 10,
-    //   sliceText: "ABC",
+    //   sliceText: 'ABC',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x00ff00,
     //   endColor: 0x004400,
     //   rings: 10,
-    //   sliceText: "DEF",
+    //   sliceText: 'DEF',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0xff00ff,
     //   endColor: 0x0000ff,
     //   rings: 10,
-    //   sliceText: "GHI",
+    //   sliceText: 'GHI',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x000000,
     //   endColor: 0xffffff,
     //   rings: 10,
-    //   sliceText: "JKL",
+    //   sliceText: 'JKL',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x000000,
     //   endColor: 0x00bfff,
     //   rings: 10,
-    //   sliceText: "MNO",
+    //   sliceText: 'MNO',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x000000,
     //   endColor: 0xff00ff,
     //   rings: 10,
-    //   sliceText: "PQR",
+    //   sliceText: 'PQR',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x000000,
     //   endColor: 0xffff00,
     //   rings: 10,
-    //   sliceText: "STU",
+    //   sliceText: 'STU',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // },
     // {
     //   degrees: 45,
     //   startColor: 0x000000,
     //   endColor: 0x33FFC9,
     //   rings: 10,
-    //   sliceText: "VWX",
+    //   sliceText: 'VWX',
     //   sliceTextStyle: {
-    //     fontFamily: "Arial Black",
+    //     fontFamily: 'Arial Black',
     //     fontSize: '22px',
-    //     color: "#000077"
+    //     color: '#000077'
     //   },
     //   sliceTextStroke: 8,
-    //   sliceTextStrokeColor: "#ffffff"
+    //   sliceTextStrokeColor: '#ffffff'
     // }
 
 
@@ -312,18 +321,17 @@ class playGame extends Phaser.Scene {
 
     // width of stroke lines
     strokeWidth: 4
-  }
+  };
 
   // constructor
   constructor() {
-    super("PlayGame");
+    super('PlayGame');
   }
 
   // method to be executed when the scene preloads
   preload(): void {
-
-    // loading pin image
-    this.load.image("pin", "/impormptster/assets/images/new-pin.png"), {
+    this.load.image('pin', '/impormptster/assets/images/new-pin.png'),
+    {
       frameWidth: 50,
       frameHeight: 50
     };
@@ -331,12 +339,12 @@ class playGame extends Phaser.Scene {
   }
 
   // method to be executed once the scene has been created
-  create() {
+  create(): void {
     // starting degrees
-    var startDegrees = -90;
+    let startDegrees = -90;
 
     // making a graphic object without adding it to the game
-    var graphics = this.make.graphics({
+    const graphics = this.make.graphics({
       x: 0,
       y: 0,
       add: false
@@ -346,9 +354,8 @@ class playGame extends Phaser.Scene {
     this.wheelContainer = this.add.container(this.game.config.width / 2, this.game.config.height / 2);
 
     // array which will contain all icons
-    var iconArray = [];
+    const iconArray = [];
 
-    // looping through each slice
     for (var i = 0; i < this.gameOptions.slices.length; i++) {
 
       // converting colors from 0xRRGGBB format to Color objects
@@ -361,7 +368,7 @@ class playGame extends Phaser.Scene {
         var ringColor = Phaser.Display.Color.Interpolate.ColorWithColor(startColor, endColor, this.gameOptions.slices[i].rings, j);
 
         // converting the interpolated color to 0xRRGGBB format
-        var ringColorString = Phaser.Display.Color.RGBToString(Math.round(ringColor.r), Math.round(ringColor.g), Math.round(ringColor.b), 0, "0x");
+        var ringColorString = Phaser.Display.Color.RGBToString(Math.round(ringColor.r), Math.round(ringColor.g), Math.round(ringColor.b), 0, '0x');
 
         // setting fill style
         graphics.fillStyle(Number(ringColorString), 1);
@@ -408,11 +415,11 @@ class playGame extends Phaser.Scene {
 
     }
 
-    // generate a texture called "wheel" from graphics data
-    graphics.generateTexture("wheel", (this.gameOptions.wheelRadius + this.gameOptions.strokeWidth) * 2, (this.gameOptions.wheelRadius + this.gameOptions.strokeWidth) * 2);
+    // generate a texture called 'wheel' from graphics data
+    graphics.generateTexture('wheel', (this.gameOptions.wheelRadius + this.gameOptions.strokeWidth) * 2, (this.gameOptions.wheelRadius + this.gameOptions.strokeWidth) * 2);
 
     // creating a sprite with wheel image as if it was a preloaded image
-    var wheel = this.add.sprite(0, 0, "wheel");
+    var wheel = this.add.sprite(0, 0, 'wheel');
 
     // adding the wheel to the container
     this.wheelContainer.add(wheel);
@@ -421,13 +428,13 @@ class playGame extends Phaser.Scene {
     this.wheelContainer.add(iconArray);
 
     // adding the pin in the middle of the canvas
-    this.pin = this.add.sprite(this.game.config.width / 2, this.game.config.height / 2, "pin");
+    this.pin = this.add.sprite(this.game.config.width / 2, this.game.config.height / 2, 'pin');
 
     // adding the text field
-    this.prizeText = this.add.text(this.game.config.width / 2, this.game.config.height - 20, "", {
-      font: "bold 32px Arial",
-      align: "center",
-      color: "blue",
+    this.prizeText = this.add.text(this.game.config.width / 2, this.game.config.height - 20, '', {
+      font: 'bold 32px Arial',
+      align: 'center',
+      color: 'blue',
 
     }).setInteractive()
       .on('pointerdown', () => this.navigateToQuiz());;
@@ -438,11 +445,11 @@ class playGame extends Phaser.Scene {
     // the game has just started = we can spin the wheel
     this.canSpin = true;
 
-    // waiting for your input, then calling "spinWheel" function
-    this.input.on("pointerdown", this.spinWheel, this);
+    // waiting for your input, then calling 'spinWheel' function
+    this.input.on('pointerdown', this.spinWheel, this);
   }
   navigateToQuiz() {
-    var canvas = document.querySelector("canvas");
+    var canvas = document.querySelector('canvas');
     canvas?.remove();
     GameWheelComponent.routerToBePassed.navigateByUrl('/quiz');
   }
@@ -454,7 +461,7 @@ class playGame extends Phaser.Scene {
     if (this.canSpin) {
 
       // resetting text field
-      this.prizeText.setText("");
+      this.prizeText.setText('');
 
       // the wheel will spin round for some times. This is just coreography
       var rounds = Phaser.Math.Between(this.gameOptions.wheelRounds.min, this.gameOptions.wheelRounds.max);
@@ -500,7 +507,7 @@ class playGame extends Phaser.Scene {
         duration: Phaser.Math.Between(this.gameOptions.rotationTimeRange.min, this.gameOptions.rotationTimeRange.max),
 
         // tween easing
-        ease: "Cubic.easeOut",
+        ease: 'Cubic.easeOut',
 
         // callback scope
         callbackScope: this,
@@ -514,7 +521,7 @@ class playGame extends Phaser.Scene {
             targets: [this.wheelContainer],
             angle: this.wheelContainer.angle - backDegrees,
             duration: Phaser.Math.Between(this.gameOptions.rotationTimeRange.min, this.gameOptions.rotationTimeRange.max) / 2,
-            ease: "Cubic.easeIn",
+            ease: 'Cubic.easeIn',
             callbackScope: this,
             onComplete: () => {
 
