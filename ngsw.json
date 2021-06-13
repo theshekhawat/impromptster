@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623596060391,
+  "timestamp": 1623613663158,
   "index": "/impromptster/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/impromptster/favicon.ico",
         "/impromptster/index.html",
-        "/impromptster/main.1e16dfd1593dd3496f33.js",
+        "/impromptster/main.8d9d002a7c248453e5e7.js",
         "/impromptster/manifest.webmanifest",
         "/impromptster/polyfills.8c151b8375e767ff858f.js",
         "/impromptster/runtime.0e49e2b53282f40c8925.js",
         "/impromptster/scripts.b71ccf24d78e9f3636c1.js",
-        "/impromptster/styles.17c1edecdbd7c7db90b7.css"
+        "/impromptster/styles.d79999c2c275f037ed7e.css"
       ],
       "patterns": []
     },
@@ -83,7 +83,7 @@
     "/impromptster/assets/images/actor.png": "d44148797fd13a58ab79f20725c87bd3be757406",
     "/impromptster/assets/images/alien.png": "402009d1b3646d820c2c52046c9e99c69833a345",
     "/impromptster/assets/images/joy.png": "6798d47fc75ba21e80634f6c759d79c8d90da41a",
-    "/impromptster/assets/images/logo.png": "d100910f97cf54261fca92ac7465c3375dad08e5",
+    "/impromptster/assets/images/logo.png": "90e1c5560bee58b88d11a1806b036bbb6e2f1666",
     "/impromptster/assets/images/new-pin.png": "7b26be9377b53650f8bae9e420e0a566a7480e9b",
     "/impromptster/assets/images/smirking-face-.png": "3cb1c8a3aa2bb0f2ea71bd25d595cdb76c94667b",
     "/impromptster/assets/images/social-media.png": "ad900e5859f067fa2103e3fb495a8a9433960cd4",
@@ -105,13 +105,13 @@
     "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff": "41c008372cb9eca0ab66813a0dfb80b08daf6ec4",
     "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg": "76dd54ebd76a592af9fe0cfac14c83eb5aafadae",
     "/impromptster/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/impromptster/index.html": "a5415fa4b64d9427d2c5fe54e5c2676f2c1d4c53",
-    "/impromptster/main.1e16dfd1593dd3496f33.js": "6d237247ef8caa86836231f66d061a6e8096c008",
+    "/impromptster/index.html": "6a02bd9dceb80fe2cfd4e9aedee9f42e9e91d79b",
+    "/impromptster/main.8d9d002a7c248453e5e7.js": "43f2001312987e3b8124ebc7fb5d552614113420",
     "/impromptster/manifest.webmanifest": "d5962cebc4a43830d0d93aeb3a3dcd561045ee7f",
     "/impromptster/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/impromptster/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/impromptster/scripts.b71ccf24d78e9f3636c1.js": "21630ca364a7df3d36c768c3003ce08bac722356",
-    "/impromptster/styles.17c1edecdbd7c7db90b7.css": "848d5de43ff2493fca0a5d1271e6aa569f4b0447"
+    "/impromptster/styles.d79999c2c275f037ed7e.css": "3fc7548e36a8abd1e391911bb419f5a7605a5e87"
   },
   "navigationUrls": [
     {
