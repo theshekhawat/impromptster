@@ -10,9 +10,10 @@ body {
 }
 
 .home-icon {
-  position: absolute;
-  top: 2%;
-  left: 0px;
+  position: fixed;
+  top: 1%;
+  left: 1rem;
+  z-index: 2;
 }
 
 h1, h2, h3 {
