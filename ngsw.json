@@ -1,0 +1,135 @@
+{
+  "configVersion": 1,
+  "timestamp": 1623596060391,
+  "index": "/impromptster/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/impromptster/favicon.ico",
+        "/impromptster/index.html",
+        "/impromptster/main.1e16dfd1593dd3496f33.js",
+        "/impromptster/manifest.webmanifest",
+        "/impromptster/polyfills.8c151b8375e767ff858f.js",
+        "/impromptster/runtime.0e49e2b53282f40c8925.js",
+        "/impromptster/scripts.b71ccf24d78e9f3636c1.js",
+        "/impromptster/styles.17c1edecdbd7c7db90b7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/impromptster/assets/datasource/question-set-1.json",
+        "/impromptster/assets/icons/icon-128x128.png",
+        "/impromptster/assets/icons/icon-144x144.png",
+        "/impromptster/assets/icons/icon-152x152.png",
+        "/impromptster/assets/icons/icon-192x192.png",
+        "/impromptster/assets/icons/icon-384x384.png",
+        "/impromptster/assets/icons/icon-512x512.png",
+        "/impromptster/assets/icons/icon-72x72.png",
+        "/impromptster/assets/icons/icon-96x96.png",
+        "/impromptster/assets/images/Bhawani.JPG",
+        "/impromptster/assets/images/actor.png",
+        "/impromptster/assets/images/alien.png",
+        "/impromptster/assets/images/joy.png",
+        "/impromptster/assets/images/logo.png",
+        "/impromptster/assets/images/new-pin.png",
+        "/impromptster/assets/images/smirking-face-.png",
+        "/impromptster/assets/images/social-media.png",
+        "/impromptster/assets/images/thinking-face.png",
+        "/impromptster/assets/images/wicked.png",
+        "/impromptster/fa-brands-400.065e813c6c3b45d6d439.svg",
+        "/impromptster/fa-brands-400.58f744c7b36f2f39d2e3.ttf",
+        "/impromptster/fa-brands-400.8fd833151004f32dc761.eot",
+        "/impromptster/fa-brands-400.c6b883559b08b0953131.woff",
+        "/impromptster/fa-brands-400.fc15c3c4caed4fce7deb.woff2",
+        "/impromptster/fa-regular-400.5be078ce44599ce04fb9.ttf",
+        "/impromptster/fa-regular-400.723589b6da08cd65a2fe.eot",
+        "/impromptster/fa-regular-400.7af11a8a0d31e5ee0ef1.woff2",
+        "/impromptster/fa-regular-400.b43a2ad9cdc72cdd8016.svg",
+        "/impromptster/fa-regular-400.bb8e17bc95da55f6b37c.woff",
+        "/impromptster/fa-solid-900.076dbe0b3ab9468a8f53.ttf",
+        "/impromptster/fa-solid-900.3444dfa507a2daa40ae0.woff2",
+        "/impromptster/fa-solid-900.5d737977d140db5d16de.eot",
+        "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff",
+        "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/impromptster/assets/datasource/question-set-1.json": "5c548eeb86c9e0da705119beaa8c81bca437f480",
+    "/impromptster/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/impromptster/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/impromptster/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/impromptster/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/impromptster/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/impromptster/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/impromptster/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/impromptster/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/impromptster/assets/images/Bhawani.JPG": "e645b77ff4fb41d95c130e0baeee533ea69b9f4f",
+    "/impromptster/assets/images/actor.png": "d44148797fd13a58ab79f20725c87bd3be757406",
+    "/impromptster/assets/images/alien.png": "402009d1b3646d820c2c52046c9e99c69833a345",
+    "/impromptster/assets/images/joy.png": "6798d47fc75ba21e80634f6c759d79c8d90da41a",
+    "/impromptster/assets/images/logo.png": "d100910f97cf54261fca92ac7465c3375dad08e5",
+    "/impromptster/assets/images/new-pin.png": "7b26be9377b53650f8bae9e420e0a566a7480e9b",
+    "/impromptster/assets/images/smirking-face-.png": "3cb1c8a3aa2bb0f2ea71bd25d595cdb76c94667b",
+    "/impromptster/assets/images/social-media.png": "ad900e5859f067fa2103e3fb495a8a9433960cd4",
+    "/impromptster/assets/images/thinking-face.png": "252e7817a61d480d6d5f09eaf285195106887268",
+    "/impromptster/assets/images/wicked.png": "2b45d24817981a4ac2385c9b23d507e870ac6299",
+    "/impromptster/fa-brands-400.065e813c6c3b45d6d439.svg": "ceebfc66fb0358816825f813ce74297f190b0c71",
+    "/impromptster/fa-brands-400.58f744c7b36f2f39d2e3.ttf": "c7b23f955a9547a6d0da2dfb14e16a0052bd32f1",
+    "/impromptster/fa-brands-400.8fd833151004f32dc761.eot": "ae55054f540b661779b9db867a5a2cb3b13ca745",
+    "/impromptster/fa-brands-400.c6b883559b08b0953131.woff": "69c28a9dab2854c358d1b32f0abbdb0b3b7662de",
+    "/impromptster/fa-brands-400.fc15c3c4caed4fce7deb.woff2": "f4e9de0d00b822a00c2a48e5e25a78f281fc8b82",
+    "/impromptster/fa-regular-400.5be078ce44599ce04fb9.ttf": "3ab847ae619711ccc32d45ecdceca3cc092ae9ff",
+    "/impromptster/fa-regular-400.723589b6da08cd65a2fe.eot": "0e3721c3fb964c5578fbeba5a5ea5fcf5910f12f",
+    "/impromptster/fa-regular-400.7af11a8a0d31e5ee0ef1.woff2": "5e3d47f9e327334619cf59adf343757f1f7b59b2",
+    "/impromptster/fa-regular-400.b43a2ad9cdc72cdd8016.svg": "a50c2d4105952ac3e4e19cc302e2e85c2fa83955",
+    "/impromptster/fa-regular-400.bb8e17bc95da55f6b37c.woff": "2cbb3b6dcefd062f238a549a51aabf3811da7c97",
+    "/impromptster/fa-solid-900.076dbe0b3ab9468a8f53.ttf": "a6d0c1566e4a6162948a99d037e4b7d8d14bc495",
+    "/impromptster/fa-solid-900.3444dfa507a2daa40ae0.woff2": "a10cafe62100054468dd9820c9f80acbafc30685",
+    "/impromptster/fa-solid-900.5d737977d140db5d16de.eot": "e01645b2018b988a2d62c3e19d1da71b3675e5d7",
+    "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff": "41c008372cb9eca0ab66813a0dfb80b08daf6ec4",
+    "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg": "76dd54ebd76a592af9fe0cfac14c83eb5aafadae",
+    "/impromptster/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/impromptster/index.html": "a5415fa4b64d9427d2c5fe54e5c2676f2c1d4c53",
+    "/impromptster/main.1e16dfd1593dd3496f33.js": "6d237247ef8caa86836231f66d061a6e8096c008",
+    "/impromptster/manifest.webmanifest": "d5962cebc4a43830d0d93aeb3a3dcd561045ee7f",
+    "/impromptster/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "/impromptster/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/impromptster/scripts.b71ccf24d78e9f3636c1.js": "21630ca364a7df3d36c768c3003ce08bac722356",
+    "/impromptster/styles.17c1edecdbd7c7db90b7.css": "848d5de43ff2493fca0a5d1271e6aa569f4b0447"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
