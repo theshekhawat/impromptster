@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623673461201,
+  "timestamp": 1623674206171,
   "index": "/impromptster/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/impromptster/favicon.ico",
         "/impromptster/index.html",
-        "/impromptster/main.6c7a9e35774ffac3d637.js",
+        "/impromptster/main.6ec4cba865498cd9989c.js",
         "/impromptster/manifest.webmanifest",
         "/impromptster/polyfills.8c151b8375e767ff858f.js",
         "/impromptster/runtime.0e49e2b53282f40c8925.js",
@@ -110,8 +110,8 @@
     "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff": "41c008372cb9eca0ab66813a0dfb80b08daf6ec4",
     "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg": "76dd54ebd76a592af9fe0cfac14c83eb5aafadae",
     "/impromptster/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/impromptster/index.html": "a920c59ed1c0eb5b491774e856a4d1f4e00da9f0",
-    "/impromptster/main.6c7a9e35774ffac3d637.js": "8388e580e74c5e2fc05f1a5ef01f4d03720006e1",
+    "/impromptster/index.html": "db94af89f58ddaf9abccb21d15aacdd769e9bc03",
+    "/impromptster/main.6ec4cba865498cd9989c.js": "197c1b6c8a2b8c463764db14f11e900ab125a63e",
     "/impromptster/manifest.webmanifest": "d5962cebc4a43830d0d93aeb3a3dcd561045ee7f",
     "/impromptster/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/impromptster/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
