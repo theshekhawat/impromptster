@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623614115512,
+  "timestamp": 1623659855001,
   "index": "/impromptster/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/impromptster/favicon.ico",
         "/impromptster/index.html",
-        "/impromptster/main.974e53a0adb013a22dd7.js",
+        "/impromptster/main.58bc1001aabf59569505.js",
         "/impromptster/manifest.webmanifest",
         "/impromptster/polyfills.8c151b8375e767ff858f.js",
         "/impromptster/runtime.0e49e2b53282f40c8925.js",
@@ -39,7 +39,6 @@
         "/impromptster/assets/icons/icon-512x512.png",
         "/impromptster/assets/icons/icon-72x72.png",
         "/impromptster/assets/icons/icon-96x96.png",
-        "/impromptster/assets/images/Bhawani.JPG",
         "/impromptster/assets/images/actor.png",
         "/impromptster/assets/images/alien.png",
         "/impromptster/assets/images/joy.png",
@@ -47,6 +46,7 @@
         "/impromptster/assets/images/new-pin.png",
         "/impromptster/assets/images/smirking-face-.png",
         "/impromptster/assets/images/social-media.png",
+        "/impromptster/assets/images/team-usual-suspects.jpg",
         "/impromptster/assets/images/thinking-face.png",
         "/impromptster/assets/images/wicked.png",
         "/impromptster/fa-brands-400.065e813c6c3b45d6d439.svg",
@@ -63,7 +63,8 @@
         "/impromptster/fa-solid-900.3444dfa507a2daa40ae0.woff2",
         "/impromptster/fa-solid-900.5d737977d140db5d16de.eot",
         "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff",
-        "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg"
+        "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg",
+        "/impromptster/team-usual-suspects.61e62bc18b1844002675.jpg"
       ],
       "patterns": []
     }
@@ -79,7 +80,6 @@
     "/impromptster/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/impromptster/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/impromptster/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/impromptster/assets/images/Bhawani.JPG": "e645b77ff4fb41d95c130e0baeee533ea69b9f4f",
     "/impromptster/assets/images/actor.png": "d44148797fd13a58ab79f20725c87bd3be757406",
     "/impromptster/assets/images/alien.png": "402009d1b3646d820c2c52046c9e99c69833a345",
     "/impromptster/assets/images/joy.png": "6798d47fc75ba21e80634f6c759d79c8d90da41a",
@@ -87,6 +87,7 @@
     "/impromptster/assets/images/new-pin.png": "7b26be9377b53650f8bae9e420e0a566a7480e9b",
     "/impromptster/assets/images/smirking-face-.png": "3cb1c8a3aa2bb0f2ea71bd25d595cdb76c94667b",
     "/impromptster/assets/images/social-media.png": "ad900e5859f067fa2103e3fb495a8a9433960cd4",
+    "/impromptster/assets/images/team-usual-suspects.jpg": "f5f27e8e4700ba535d7b7ace3e68dd97960347e0",
     "/impromptster/assets/images/thinking-face.png": "252e7817a61d480d6d5f09eaf285195106887268",
     "/impromptster/assets/images/wicked.png": "2b45d24817981a4ac2385c9b23d507e870ac6299",
     "/impromptster/fa-brands-400.065e813c6c3b45d6d439.svg": "ceebfc66fb0358816825f813ce74297f190b0c71",
@@ -105,13 +106,14 @@
     "/impromptster/fa-solid-900.cefdfa5d3e0767a700dd.woff": "41c008372cb9eca0ab66813a0dfb80b08daf6ec4",
     "/impromptster/fa-solid-900.d279d01b1659466bfdbf.svg": "76dd54ebd76a592af9fe0cfac14c83eb5aafadae",
     "/impromptster/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/impromptster/index.html": "5eb58fbeb717fc18aaadf6f9791c1d4c270169d2",
-    "/impromptster/main.974e53a0adb013a22dd7.js": "fbb7d2e72f9979f677c7898ce2811eaf89a20983",
+    "/impromptster/index.html": "f93868ba21d909062d2a98227c8384172b316866",
+    "/impromptster/main.58bc1001aabf59569505.js": "3649f940e709c3af91783a0a77870ec2ec6f95a5",
     "/impromptster/manifest.webmanifest": "d5962cebc4a43830d0d93aeb3a3dcd561045ee7f",
     "/impromptster/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/impromptster/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/impromptster/scripts.b71ccf24d78e9f3636c1.js": "21630ca364a7df3d36c768c3003ce08bac722356",
-    "/impromptster/styles.d79999c2c275f037ed7e.css": "3fc7548e36a8abd1e391911bb419f5a7605a5e87"
+    "/impromptster/styles.d79999c2c275f037ed7e.css": "3fc7548e36a8abd1e391911bb419f5a7605a5e87",
+    "/impromptster/team-usual-suspects.61e62bc18b1844002675.jpg": "f5f27e8e4700ba535d7b7ace3e68dd97960347e0"
   },
   "navigationUrls": [
     {
