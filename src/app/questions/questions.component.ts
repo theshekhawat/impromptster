@@ -18,7 +18,9 @@ export class QuestionsComponent implements OnInit {
   @ViewChild('menuNav') menuNav!: ElementRef;
   @ViewChild('menuNavItem') menuNavItem!: ElementRef;
   public showMenu = false;
-  public questionDetails!: Array<IQuestionDetails>;
+  public questionDetails!: {
+    Questions: Array<IQuestionDetails>
+  };
   public imgBasePath = ConstantsService.imageAssetsBasePath;
 
   constructor(private quizInformationDetailsService: QuizInformationDetailsService, private route: ActivatedRoute) { }
@@ -26,9 +28,7 @@ export class QuestionsComponent implements OnInit {
   ngOnInit(): void {
     this.route.data.subscribe((data) => {
       this.questionDetails = data.questionData;
-      console.log(data.questionData);
     });
-    // this.getQuizQuestions();
   }
 
   private getQuizQuestions(): void {
